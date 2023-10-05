@@ -3,3 +3,52 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.flex{
+    display: flex;
+}
+
+header,
+footer{
+    color: white;
+}
+
+header{
+    background-color: black;
+    height: 30px;
+}
+
+main{
+    height: calc(100vh - 70px);
+    overflow-x: hidden;
+    padding: 20px 0;
+}
+
+footer{
+    background-color: #222222;
+    height: 40px;
+}
+.debug main{
+    background-color: yellow;
+}
+
+.debug .user{
+    border: 2px solid black;
+}
+
+/* MAIN */
+.contenitore{
+    margin: 0 15px;
+}
+.user{
+    width: 180px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.utenti{
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* /MAIN */
