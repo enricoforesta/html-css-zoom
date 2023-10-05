@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-
+/* COMUNI */
 .flex {
     display: flex;
 }
@@ -14,28 +14,70 @@ img {
     height: 100%;
 }
 
-
-
 header,
 footer {
     color: white;
 }
 
-footer {
-    background-color: #222222;
-    height: 40px;
+/* /COMUNI */
+
+/* HEADER */
+
+header {
+    background-color: black;
+    height: 30px;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.relativo {
+    position: relative;
+}
+
+.icona-header {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+}
+
+.icona-speaker {
+    width: 100px;
+    background-color: grey;
+    font-size: 10px;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.icona-multi {
+    background-color: grey;
+    padding: 3px;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+/* /HEADER */
+
+
 /* MAIN */
+
 main {
-    height: calc(100vh - 70px);
+    height: calc(100vh - 100px);
     overflow-x: hidden;
     padding: 20px 0;
     background-color: black;
 }
 
-.contenitore {
+.contenitore-main {
     margin: 0 15px;
+}
+
+.utenti {
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .user {
@@ -45,11 +87,6 @@ main {
     position: relative;
     top: 0;
     bottom: 0;
-}
-
-.utenti {
-    flex-wrap: wrap;
-    justify-content: space-around;
 }
 
 .identificativo {
@@ -64,38 +101,52 @@ main {
 
 /* /MAIN */
 
-/* HEADER */
-header {
-    background-color: black;
-    height: 30px;
-}
-.icona a{
-    text-decoration: none;
-    color: white;
+
+
+/* FOOTER */
+
+footer {
+    background-color: #222222;
+    height: 70px;
 }
 
-.icona-speaker{
-    width: 100px;
-    background-color: grey;
-    font-size: 10px;
-    padding: 4px;
-    border-radius: 5px;
+.icona-footer {
+    justify-content: space-between;
 }
 
-.icona-multi{
-    background-color: grey;
-    padding: 3px;
-    font-size: 12px;
-    border-radius: 5px;
-    margin-left: 5px;
-}
-.relativo{
-    position: relative;
-}
-.icona{
-    position: absolute;
-    top: 2px;
-    right: 5px;
+.contenitore-footer {
+    padding: 10px 10px 0 10px;
+    text-align: center;
 }
 
-/* /HEADER */
+.freccia {
+    align-items: center;
+    padding-right: 10px;
+}
+
+.bottone {
+    width: 200px;
+    background-color: #4a4a4a;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* STYLE A */
+
+.icona-footer a {
+    font-size: 30px;
+    margin: 0 8px;
+}
+
+.freccia a {
+    font-size: 20px;
+}
+
+.bottone a {
+    color: red;
+    font-size: 20px;
+}
+
+/* /STYLE A */
+/* /FOOTER */
